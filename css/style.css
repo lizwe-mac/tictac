@@ -1,0 +1,64 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background: #333;
+  padding: 0.3rem;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.gameboard{
+  border: 1px solid #666;
+  float: left;
+  width: 60%;
+  padding: 0.5rem;
+  display: grid;
+  grid:  1fr 1fr 1fr / 1fr 1fr 1fr;
+  gap: 0.2rem;
+  height: 15rem;
+  border-radius: 0.3rem;
+}
+
+.scoreboard{
+  color: rgb(207, 206, 206);
+  float: left;
+  width: 20%;
+  border: 1px solid #666;
+  margin-left: 0.5rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.box{
+  border-radius: 0.2rem;
+  border: 1px solid #666;
+  text-align: center;
+  font-size: 4rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
