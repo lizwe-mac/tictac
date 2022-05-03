@@ -24,6 +24,7 @@
 body {
   background: #333;
   padding: 0.3rem;
+  font-family: sans-serif;
 }
 
 
@@ -58,7 +59,45 @@ body {
   text-align: center;
   font-size: 4rem;
 }
+@media screen and (max-width: 600px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .gameboard{
+    width: 100%;
+    /* height: auto; */
+  }
+  .scoreboard{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 
+  }
+  .scoreboard *{
+    /* outline: 1px solid red; */
+    font-size: 2rem;
+
+  }
+  .score {
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+  }
+
+  .playerscore{
+    display: flex;
+  }
+  .player {
+    /* margin-right: auto; */
+  }
+  .dash *{
+    padding: 0;
+    margin: 0;
+  }
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
